@@ -9,20 +9,20 @@ type GalleryItem = {
 
 const gallery: GalleryItem[] = [
   {
-    src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80',
-    alt: 'Construction site with scaffolding and crane',
+    src: '/images/gallery-1.svg',
+    alt: 'Abstract scaffolding study',
     label: 'Global access',
     caption: 'Modular bays shipped worldwide with pre-assembled kits.',
   },
   {
-    src: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80',
-    alt: 'Crew inspecting scaffolding',
+    src: '/images/gallery-2.svg',
+    alt: 'Abstract airflow overlay',
     label: 'Safety patrols',
     caption: 'Daily checklists captured with AR-ready tools.',
   },
   {
-    src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
-    alt: 'High-rise exterior with scaffolding',
+    src: '/images/gallery-3.svg',
+    alt: 'Abstract grid and timeline',
     label: 'Dialed in',
     caption: 'Live dashboards keep every stakeholder aligned.',
   },

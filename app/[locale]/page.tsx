@@ -79,6 +79,23 @@ export default async function LandingPage({ params }: LocaleParams) {
         <ProcessTimeline steps={copy.process} />
       </section>
 
+      <section className="rounded-[32px] border border-white/70 bg-white/80 p-6 shadow-[0_20px_40px_rgba(15,23,42,0.12)] sm:p-8">
+        <div className="flex flex-col gap-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary/80">Documents</p>
+          <h2 className="text-2xl font-semibold text-dark-blue">Capability statement</h2>
+          <p className="text-sm text-slate-600">
+            Download our capability statement to see the full methodology, safety protocols, and global coverage.
+          </p>
+        </div>
+        <a
+          href="/docs/capability-statement.txt"
+          className="mt-4 inline-flex items-center gap-2 rounded-full border border-dark-blue/60 px-5 py-3 text-sm font-semibold uppercase tracking-[0.35em] text-dark-blue transition hover:border-dark-blue hover:bg-dark-blue hover:text-white"
+          download
+        >
+          Download
+        </a>
+      </section>
+
       <section id="contact" className="grid gap-8 rounded-[32px] border border-white/70 bg-gradient-to-br from-dark-blue/10 via-white to-white p-6 shadow-[0_30px_60px_rgba(15,23,42,0.25)] transition-all duration-300 hover:shadow-[0_35px_70px_rgba(15,23,42,0.3)] lg:grid-cols-[1.2fr,1fr] lg:p-8">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.45em] text-primary/90">Contact</p>
