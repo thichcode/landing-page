@@ -1,32 +1,25 @@
 # Anta Scaffolding Landing
 
-Multi-language landing page inspired by https://www.antascaffolding.com/solution.html. Built with Next.js App Router, Tailwind CSS, and ready-to-edit translations for English, Vietnamese, and Chinese.
+A multilingual Next.js App Router site with tailored solutions, stats, process, news, and contact flow for a construction/engineering audience. Content is structured so the same layout renders in English, Vietnamese, and Chinese simply by switching the `[locale]` segment.
 
 ## Features
 
-- App Router structure with `[locale]` segments for `/en`, `/vi`, and `/zh`.
-- Content stored in JSON files under `data/locales` for easy edits or additions.
-- Hero, solution grid, stats, process timeline, and contact form sections modeled after the reference page.
-- Localized news feed powered by `data/posts.json` plus API routes so every locale shows matching updates.
-- Admin publishing console at `/admin` that posts to `/api/posts`; the feed reflects newly published entries immediately in the current session.
-- Tailwind styling with gradients, cards, and responsive layout.
-- Language switcher, localized metadata, and contact form backed by a `/api/contact` route.
+- App Router layout under `app/[locale]/page.tsx` with locale-aware metadata, hero, solution grid, impact stats, process timeline, localized posts, and CTA form.
+- Text and CTA copy live in `data/locales/{en,vi,zh}.json`, so you can edit, copy, or add languages without touching the components.
+- Localized news feed pulled from `data/posts.json` via `/api/posts`, plus an admin console at `/admin` to create announcements (protected by `ADMIN_SECRET`).
+- Contact form posts to `/api/contact`, ready for custom webhooks once you replace the console log stub.
+- Tailwind-based styling, gradients, cards, and responsive spacing derived from the broader design system.
 
 ## Development
 
-1. Install dependencies: `npm install`
-2. Run dev server: `npm run dev`
-3. Open <http://localhost:3000/en>, `/vi`, or `/zh` for each locale or visit `/admin` to publish test stories.
-
-## Admin console
-
-- Visit `/admin` to see existing news items, choose a locale, and publish a new announcement.
-- The form posts to `/api/posts`; the API expects an `ADMIN_SECRET` value. Defaults to `ant-admin-demo` unless you set a custom env var.
-- New posts are written back to `data/posts.json` (if the filesystem is writable) and also appear immediately in the admin list and the locale landing page.
+1. `npm install`
+2. `npm run dev`
+3. Visit `/en`, `/vi`, `/zh`, or `/admin` on `http://localhost:3000`.
+4. Form submissions hit `/api/contact`; admin posts hit `/api/posts` with the current `ADMIN_SECRET`.
 
 ## Deploying to Vercel
 
-1. Push the repo to GitHub (like `https://github.com/thichcode/landing-page`).
-2. Import it into Vercel—Next.js App Router is detected automatically.
-3. Set the `ADMIN_SECRET` environment variable in Vercel if you want to override the default `ant-admin-demo` key.
-4. Deploy; the `/api/contact` and `/api/posts` routes run on Vercel Edge/Serverless automatically.
+- Connect the root of this repository (`/`) as your Vercel project; the default root build location is correct because the Next.js app sits at the repo root.
+- Vercel auto-detects the App Router run-time. Set `ADMIN_SECRET` as an environment variable to override the default `ant-admin-demo` key if desired.
+- After pushing to `main`, Vercel watches the repo and automatically rebuilds/deploys.
+- API routes (`/api/contact`, `/api/posts`) and the admin console (`/admin`) land on the same deployment as the public landing page.
