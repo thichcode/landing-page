@@ -18,11 +18,6 @@ const localeOptions = [
   { value: 'zh', label: '中文' },
 ];
 
-export const metadata = {
-  title: 'Admin · Anta Scaffolding',
-  description: 'Publish announcements that show up inside the landing page news feed.',
-};
-
 export default function AdminPage() {
   const [posts, setPosts] = useState<AdminPost[]>([]);
   const [formState, setFormState] = useState({

@@ -10,16 +10,15 @@ import type { LocaleKey } from '@/lib/locale';
 import { getLocalePosts } from '@/lib/posts';
 import type { Metadata } from 'next';
 
-type PageProps = {
-  params: {
-    locale: string;
-  };
-};
-
 export const revalidate = 60;
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const locale = params.locale as LocaleKey;
+type LocaleParams = {
+  params?: Promise<{ locale?: string }>;
+};
+
+export async function generateMetadata({ params }: LocaleParams): Promise<Metadata> {
+  const resolved = await params;
+  const locale = ((resolved?.locale as LocaleKey) ?? 'en') as LocaleKey;
   if (!supportedLocales.includes(locale)) {
     return {
       title: 'Anta Scaffolding',
@@ -33,8 +32,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function LandingPage({ params }: PageProps) {
-  const locale = (params.locale as LocaleKey) ?? 'en';
+export default async function LandingPage({ params }: LocaleParams) {
+  const resolved = await params;
+  const locale = ((resolved?.locale as LocaleKey) ?? 'en') as LocaleKey;
   const copy = supportedLocales.includes(locale) ? getLocaleData(locale) : getLocaleData('en');
   const posts = await getLocalePosts(locale);
 
