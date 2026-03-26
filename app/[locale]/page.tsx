@@ -8,6 +8,7 @@ import { ProcessTimeline } from '@/components/ProcessTimeline';
 import { PostsSection } from '@/components/PostsSection';
 import { SolutionGrid } from '@/components/SolutionGrid';
 import { StatGrid } from '@/components/StatGrid';
+import { StatsStrip } from '@/components/StatsStrip';
 import { TestimonialSection } from '@/components/TestimonialSection';
 import { WhyChoose } from '@/components/WhyChoose';
 import { getLocaleData, supportedLocales } from '@/lib/locale';
@@ -47,6 +48,7 @@ export default async function LandingPage({ params }: LocaleParams) {
     <main className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 pb-16 pt-10 sm:px-6 lg:gap-12">
       <NavBar />
       <Hero content={copy.hero} />
+      <StatsStrip stats={copy.stats} />
       <PartnersSection />
       <WhyChoose />
 
