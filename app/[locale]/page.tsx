@@ -1,3 +1,4 @@
+import { CaseStudiesSection } from '@/components/CaseStudiesSection';
 import { ContactForm } from '@/components/ContactForm';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
@@ -59,6 +60,8 @@ export default async function LandingPage({ params }: LocaleParams) {
         </div>
         <SolutionGrid solutions={copy.solutions} />
       </section>
+
+      <CaseStudiesSection />
 
       <section className="space-y-6">
         <div className="flex flex-col gap-2">

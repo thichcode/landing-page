@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Marina Towers renovation",
+    "description": "Complex cantilevered scaffolding built in five stages to keep tenants operational while crews replaced facades.",
+    "result": "26% faster mobilization",
+    "focus": "Design + logistics"
+  },
+  {
+    "title": "Portside offshore yard",
+    "description": "Modular bays preassembled offsite and delivered in 72 hours to dockside cranes for a critical lift.",
+    "result": "0 lost-time incidents",
+    "focus": "Safety monitoring"
+  },
+  {
+    "title": "High-speed rail bridges",
+    "description": "Sensor-backed inspections captured every shift, feeding data to a shared dashboard for stakeholders in three countries.",
+    "result": "98% audit pass rate",
+    "focus": "Digital QA"
+  }
+]
