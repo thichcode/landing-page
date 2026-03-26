@@ -1,11 +1,15 @@
 import { ContactForm } from '@/components/ContactForm';
+import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { ImageGallery } from '@/components/ImageGallery';
-import { LocaleSwitcher } from '@/components/LocaleSwitcher';
+import { NavBar } from '@/components/NavBar';
+import { PartnersSection } from '@/components/PartnersSection';
 import { ProcessTimeline } from '@/components/ProcessTimeline';
 import { PostsSection } from '@/components/PostsSection';
 import { SolutionGrid } from '@/components/SolutionGrid';
 import { StatGrid } from '@/components/StatGrid';
+import { TestimonialSection } from '@/components/TestimonialSection';
+import { WhyChoose } from '@/components/WhyChoose';
 import { getLocaleData, supportedLocales } from '@/lib/locale';
 import type { LocaleKey } from '@/lib/locale';
 import { getLocalePosts } from '@/lib/posts';
@@ -40,21 +44,16 @@ export default async function LandingPage({ params }: LocaleParams) {
   const posts = await getLocalePosts(locale);
 
   return (
-    <main className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6 pb-16 pt-10">
-      <header className="flex flex-col gap-6">
-        <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.35em] text-slate-500">
-          <LocaleSwitcher />
-          <p className="ml-auto text-right text-[10px] tracking-[0.6em] text-slate-400">Anta Solutions · Global</p>
-        </div>
-        <Hero content={copy.hero} />
-      </header>
+    <main className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 pb-16 pt-10 sm:px-6 lg:gap-12">
+      <NavBar />
+      <Hero content={copy.hero} />
+      <PartnersSection />
+      <WhyChoose />
 
       <section className="space-y-6">
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.45em] text-primary/80">Solution Stack</p>
-            <h2 className="mt-2 text-3xl font-semibold text-dark-blue">Operational readiness in every region</h2>
-          </div>
+        <div className="flex flex-col gap-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-primary/80">Solution Stack</p>
+          <h2 className="text-3xl font-semibold text-dark-blue">Operational readiness in every region</h2>
         </div>
         <SolutionGrid solutions={copy.solutions} />
       </section>
@@ -71,15 +70,7 @@ export default async function LandingPage({ params }: LocaleParams) {
 
       <PostsSection posts={posts} />
 
-      <section className="space-y-6">
-        <div className="flex flex-col gap-2">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-primary/80">Process</p>
-          <h2 className="text-3xl font-semibold text-dark-blue">From brief to teardown</h2>
-        </div>
-        <ProcessTimeline steps={copy.process} />
-      </section>
-
-      <section className="rounded-[32px] border border-white/70 bg-white/80 p-6 shadow-[0_20px_40px_rgba(15,23,42,0.12)] sm:p-8">
+      <section className="rounded-[32px] border border-white/70 bg-white/80 p-6 shadow-[0_20px_40px_rgba(15,23,42,0.12)] sm:p-8" id="documents">
         <div className="flex flex-col gap-2">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary/80">Documents</p>
           <h2 className="text-2xl font-semibold text-dark-blue">Capability statement</h2>
@@ -96,7 +87,20 @@ export default async function LandingPage({ params }: LocaleParams) {
         </a>
       </section>
 
-      <section id="contact" className="grid gap-8 rounded-[32px] border border-white/70 bg-gradient-to-br from-dark-blue/10 via-white to-white p-6 shadow-[0_30px_60px_rgba(15,23,42,0.25)] transition-all duration-300 hover:shadow-[0_35px_70px_rgba(15,23,42,0.3)] lg:grid-cols-[1.2fr,1fr] lg:p-8">
+      <section className="space-y-6">
+        <div className="flex flex-col gap-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-primary/80">Process</p>
+          <h2 className="text-3xl font-semibold text-dark-blue">From brief to teardown</h2>
+        </div>
+        <ProcessTimeline steps={copy.process} />
+      </section>
+
+      <TestimonialSection />
+
+      <section
+        id="contact"
+        className="grid gap-8 rounded-[32px] border border-white/70 bg-gradient-to-br from-dark-blue/10 via-white to-white p-6 shadow-[0_30px_60px_rgba(15,23,42,0.25)] transition-all duration-300 hover:shadow-[0_35px_70px_rgba(15,23,42,0.3)] lg:grid-cols-[1.2fr,1fr] lg:p-8"
+      >
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.45em] text-primary/90">Contact</p>
           <h2 className="mt-3 text-3xl font-semibold text-dark-blue">{copy.cta.title}</h2>
@@ -111,6 +115,8 @@ export default async function LandingPage({ params }: LocaleParams) {
           <ContactForm formCopy={copy.form} successMessage={copy.form.success} />
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }
