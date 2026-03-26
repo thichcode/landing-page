@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "eyebrow": "Giải pháp tiếp cận & An toàn",
+    "title": "Xây dựng công trình táo bạo với giàn giáo thiết kế để đảm bảo tiến độ.",
+    "description": "Từ thiết kế đến triển khai, giàn giáo của chúng tôi kết hợp vật liệu đạt chuẩn, giám sát tức thì và điều động nhanh để mọi dự án nằm trong tay bạn.",
+    "ctaPrimary": "Đặt lịch khảo sát",
+    "ctaSecondary": "Xem dự án tiêu biểu"
+  },
+  "solutions": [
+    {
+      "tag": "CẤU TRÚC",
+      "title": "Thiết kế giàn giáo cao cấp",
+      "description": "Mô hình hóa tại chỗ, tối ưu tải trọng, gió và tiến độ ngay từ đầu.",
+      "details": [
+        "Lập kế hoạch 3D, xuất BIM",
+        "Modul, bộ kit và neo đúc sẵn",
+        "Báo cáo tuân thủ cho chính quyền địa phương"
+      ]
+    },
+    {
+      "tag": "AN TOÀN",
+      "title": "Giám sát an toàn",
+      "description": "Hệ thống cảm biến, kiểm tra hàng ngày, thu thập dữ liệu từ flycam và check-in đội ngũ.",
+      "details": [
+        "Cảnh báo rủi ro tức thì",
+        "Danh sách kiểm toán số",
+        "Kịch bản phản ứng sự cố"
+      ]
+    },
+    {
+      "tag": "VẬN HÀNH",
+      "title": "Hỗ trợ hiện trường",
+      "description": "Đội ngũ luân phiên toàn cầu, kho phụ tùng dự phòng đảm bảo không gián đoạn.",
+      "details": [
+        "Tổng đài 24/7",
+        "Theo dõi logistics",
+        "Nhân sự chứng chỉ tại mọi ca"
+      ]
+    }
+  ],
+  "stats": [
+    { "label": "Dự án đã bàn giao", "value": "1.200+" },
+    { "label": "Kiểm định an toàn đạt", "value": "98%" },
+    { "label": "Thời gian triển khai", "value": "72 giờ" }
+  ],
+  "process": [
+    { "title": "Tư vấn", "description": "Khởi động kỹ thuật & tuân thủ, ấn định phạm vi và tiến độ." },
+    { "title": "Thiết kế", "description": "Mô hình cấu trúc, bản sao số và mô hình tài nguyên trước xây dựng." },
+    { "title": "Triển khai", "description": "Lắp dựng, kiểm tra chất lượng và dashboard trực tuyến cho đối tác." },
+    { "title": "Hậu mãi", "description": "Kiểm tra hàng tuần, đội dự phòng và tháo dỡ theo kế hoạch." }
+  ],
+  "cta": {
+    "title": "Bạn sẵn sàng nói chuyện về giàn giáo chưa?",
+    "description": "Gửi thông tin, chúng tôi sẽ phản hồi trong một ngày làm việc cùng kế hoạch, báo giá và phương án an toàn.",
+    "action": "Gửi yêu cầu"
+  },
+  "form": {
+    "name": "Họ tên",
+    "company": "Công ty",
+    "phone": "Điện thoại",
+    "message": "Thông tin dự án",
+    "submit": "Gửi tin nhắn",
+    "success": "Chúng tôi sẽ phản hồi trong vòng 24 giờ."
+  },
+  "footer": {
+    "contact": "Liên hệ",
+    "email": "contact@antascaffolding.com",
+    "phone": "+1 877 309 1456"
+  }
+}

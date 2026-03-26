@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "eyebrow": "Integrated Access & Safety",
+    "title": "Build daring structures with scaffolding engineered for certainty.",
+    "description": "From design to dispatch, our scaffold solutions combine compliance-grade materials, live monitoring, and rapid mobilization—so every project stays on track and on budget.",
+    "ctaPrimary": "Book a survey",
+    "ctaSecondary": "View case studies"
+  },
+  "solutions": [
+    {
+      "tag": "STRUCTURE",
+      "title": "Advanced Scaffold Design",
+      "description": "Temporary structures modeled in-house, optimized for load, wind, and schedule constraints.",
+      "details": [
+        "3D planning with BIM export",
+        "Pre-fabricated bays, kits, and anchors",
+        "Compliance dashboards for local authorities"
+      ]
+    },
+    {
+      "tag": "SAFETY",
+      "title": "Safety Monitoring",
+      "description": "Sensor-driven oversight with daily inspections, drone capture, and worker check-ins.",
+      "details": [
+        "Real-time risk alerts",
+        "Digital punch lists",
+        "Crisis response playbooks"
+      ]
+    },
+    {
+      "tag": "LOGISTICS",
+      "title": "Field Support",
+      "description": "Field teams rotate globally; spare-part depots keep uptime high.",
+      "details": [
+        "24/7 hotline",
+        "Logistics tracking",
+        "Certified riggers on every shift"
+      ]
+    }
+  ],
+  "stats": [
+    { "label": "Projects delivered", "value": "1,200+" },
+    { "label": "Safety audits passed", "value": "98%" },
+    { "label": "Average mobilization", "value": "72h" }
+  ],
+  "process": [
+    { "title": "Consult", "description": "Engineering and compliance kickoff, greenlighting scope and schedule." },
+    { "title": "Design", "description": "Structural modeling, digital twin, and resource bundling before we build." },
+    { "title": "Deploy", "description": "On-site assembly, quality control, and live dashboards for stakeholders." },
+    { "title": "Support", "description": "Weekly inspections, backup crews, and controlled dismantle when it’s done." }
+  ],
+  "cta": {
+    "title": "Ready to talk scaffolding?",
+    "description": "Send us your specs and we’ll propose a timeline, quote, and safety plan within one business day.",
+    "action": "Send request"
+  },
+  "form": {
+    "name": "Full name",
+    "company": "Company",
+    "phone": "Phone",
+    "message": "Project details",
+    "submit": "Submit inquiry",
+    "success": "We’ll respond within one business day."
+  },
+  "footer": {
+    "contact": "Reach us",
+    "email": "contact@antascaffolding.com",
+    "phone": "+1 877 309 1456"
+  }
+}

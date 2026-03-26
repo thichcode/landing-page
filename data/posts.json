@@ -1,0 +1,56 @@
+[
+  {
+    "id": "news-001",
+    "locale": "en",
+    "category": "Field Ops",
+    "title": "Modular scaffolding for maritime yards",
+    "summary": "New floating dock routines rely on our pre-fabricated bays, reducing assembly time by 37% and meeting coastal safety rules.",
+    "author": "Anta Field Ops",
+    "publishedAt": "2026-02-28T08:00:00Z"
+  },
+  {
+    "id": "news-002",
+    "locale": "en",
+    "category": "Safety",
+    "title": "Safety monitoring dashboard reaches 98% uptime",
+    "summary": "Live sensor feeds and drone inspections now stream through the same command, giving crews one place to verify checkpoints.",
+    "author": "Anta Innovations",
+    "publishedAt": "2026-03-11T12:00:00Z"
+  },
+  {
+    "id": "news-003",
+    "locale": "vi",
+    "category": "Vận hành",
+    "title": "Lắp dựng nhanh cho nhà máy dệt Đông Hà",
+    "summary": "Đội ngũ Anta đã dựng giàn giáo đa tầng chỉ trong 4 ngày làm việc, rút gọn 26% so với kế hoạch ban đầu.",
+    "author": "Anta Việt Nam",
+    "publishedAt": "2026-03-04T09:30:00Z"
+  },
+  {
+    "id": "news-004",
+    "locale": "vi",
+    "category": "An toàn",
+    "title": "Giám sát xuyên suốt đại dự án cầu trên sông Hồng",
+    "summary": "Cảm biến rung lắc kết hợp dữ liệu thời tiết cung cấp thông tin kịp thời giúp đội thi công điều chỉnh phương án.",
+    "author": "Anta Safety",
+    "publishedAt": "2026-03-18T07:45:00Z"
+  },
+  {
+    "id": "news-005",
+    "locale": "zh",
+    "category": "结构",
+    "title": "高塔项目采用数字化规划",
+    "summary": "通过 BIM+AI 预测负载并提前协调材料，施工现场的时间表比原计划提前一周完成。",
+    "author": "Anta 亚洲",
+    "publishedAt": "2026-03-02T14:00:00Z"
+  },
+  {
+    "id": "news-006",
+    "locale": "zh",
+    "category": "物流",
+    "title": "全球备件网络支持中东工地",
+    "summary": "从香港到迪拜的关键部件在 48 小时内送达，现场施工不停工。",
+    "author": "Anta Logistics",
+    "publishedAt": "2026-03-21T16:30:00Z"
+  }
+]
