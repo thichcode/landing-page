@@ -31,6 +31,9 @@ export function NavBar() {
         ))}
       </div>
       <div className="flex items-center gap-4">
+        <div className="lg:hidden">
+          <LocaleSwitcher />
+        </div>
         <div className="hidden lg:block">
           <LocaleSwitcher />
         </div>
