@@ -1,5 +1,6 @@
 import { ContactForm } from '@/components/ContactForm';
 import { Hero } from '@/components/Hero';
+import { ImageGallery } from '@/components/ImageGallery';
 import { LocaleSwitcher } from '@/components/LocaleSwitcher';
 import { ProcessTimeline } from '@/components/ProcessTimeline';
 import { PostsSection } from '@/components/PostsSection';
@@ -65,6 +66,8 @@ export default async function LandingPage({ params }: LocaleParams) {
         </div>
         <StatGrid stats={copy.stats} />
       </section>
+
+      <ImageGallery />
 
       <PostsSection posts={posts} />
 

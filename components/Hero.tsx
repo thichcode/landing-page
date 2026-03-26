@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 type HeroContent = {
@@ -32,13 +33,20 @@ export function Hero({ content }: { content: HeroContent }) {
           </div>
         </div>
         <div className="order-first -mr-4 ml-auto hidden w-full max-w-sm lg:block lg:order-none">
-          <div className="aspect-[3/2] w-full rounded-3xl bg-gradient-to-br from-primary/80 to-accent/90 p-6 text-white shadow-[0_20px_50px_rgba(244,63,94,0.35)]">
-            <p className="text-sm uppercase tracking-[0.45em]">Live 24/7</p>
-            <p className="mt-6 text-5xl font-semibold">Safety</p>
-            <p className="mt-1 text-lg font-light text-white/80">& Monitoring</p>
-            <p className="mt-6 text-sm leading-relaxed text-white/90">
-              Sensors, inspections, and drone telemetry fused into a single workflow.
-            </p>
+          <div className="relative aspect-[3/2] w-full overflow-hidden rounded-3xl border border-white/70 shadow-[0_20px_50px_rgba(15,23,42,0.2)]">
+            <Image
+              src="/images/hero-structure.jpg"
+              alt="Engineered scaffolding tower"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 80vw, 420px"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40" />
+            <div className="absolute bottom-4 left-4 space-y-1 text-white">
+              <p className="text-xs uppercase tracking-[0.4em] text-white/80">On-site ready</p>
+              <p className="text-lg font-semibold text-white">Prefabricated + certified</p>
+            </div>
           </div>
         </div>
       </div>
