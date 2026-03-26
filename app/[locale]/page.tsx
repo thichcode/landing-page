@@ -76,7 +76,7 @@ export default async function LandingPage({ params }: LocaleParams) {
         <ProcessTimeline steps={copy.process} />
       </section>
 
-      <section className="grid gap-8 rounded-[32px] border border-white/70 bg-gradient-to-br from-dark-blue/10 via-white to-white p-8 shadow-[0_30px_60px_rgba(15,23,42,0.25)] lg:grid-cols-[1.2fr,1fr]">
+      <section id="contact" className="grid gap-8 rounded-[32px] border border-white/70 bg-gradient-to-br from-dark-blue/10 via-white to-white p-6 shadow-[0_30px_60px_rgba(15,23,42,0.25)] transition-all duration-300 hover:shadow-[0_35px_70px_rgba(15,23,42,0.3)] lg:grid-cols-[1.2fr,1fr] lg:p-8">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.45em] text-primary/90">Contact</p>
           <h2 className="mt-3 text-3xl font-semibold text-dark-blue">{copy.cta.title}</h2>

@@ -6,7 +6,7 @@ export function PostsSection({ posts }: { posts: Post[] }) {
   }
 
   return (
-    <section className="space-y-6">
+    <section id="news-feed" className="space-y-6">
       <div className="flex flex-col gap-2">
         <p className="text-xs font-semibold uppercase tracking-[0.35em] text-primary/80">News & updates</p>
         <h2 className="text-3xl font-semibold text-dark-blue">Latest from the field</h2>
