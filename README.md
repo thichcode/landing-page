@@ -1,6 +1,6 @@
 # Anta Scaffolding Landing
 
-A multilingual Next.js App Router site with tailored solutions, stats, process, news, and contact flow for a construction/engineering audience. Content is structured so the same layout renders in English, Vietnamese, and Chinese simply by switching the `[locale]` segment.
+A multi-page Next.js App Router site for Anta Access with distinct "Home", "Solution", and "Service" experiences plus shared sections such as stats, process, news, and contact flows. Each route can be extended independently while reusing the shared components defined in `components/`.
 
 ## Features
 
@@ -15,7 +15,7 @@ A multilingual Next.js App Router site with tailored solutions, stats, process, 
 
 1. `npm install`
 2. `npm run dev`
-3. Visit `/en`, `/vi`, `/zh`, or `/admin` on `http://localhost:3000`.
+3. Visit `/home`, `/solution`, `/service`, or `/admin` on `http://localhost:3000` to explore each experience.
 4. Form submissions hit `/api/contact`; admin posts hit `/api/posts` with the current `ADMIN_SECRET`.
 
 ## Environment variables
